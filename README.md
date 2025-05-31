@@ -1,2 +1,2 @@
 # MineriaDeDatos
-Proyectos de Minería de Datos
+Proyectos de Minería de Datos, del segúndo cuatrimestre del 2025
