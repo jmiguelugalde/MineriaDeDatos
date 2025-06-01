@@ -1,0 +1,23 @@
+1. copie los otros 2 archivos proporcionados (c1.in y c1shell.py) a una carpeta
+2. abralos como un proyecto de python de vscode. 
+3. intente ejecutar el archivo c1shell.py. Obtendrá un error. 
+4. EN LA TERMINAL DONDE LE OCURRIÓ EL ERROR, haga click y luego presione la tecla 
+CON LA FLECHA ARRIBA. Reaparecerá el comando de ejecución. 
+5. agregue al final de dicho comando (SIN LAS COMILLAS) "c1.in c1.out" y presione enter. 
+Observará que aparecer un archivo c1.out --> esa es la salida del compilador.
+6. ahora, vamos a modificar c1shell.py para que vea el resultado del 
+analizador léxico. 
+7. agregue a la clase Token el método "__str__" para modificar la impresión de los tokens
+8. dicho método __str__ tendrá solo esta linea:
+return f"token type = {self.category}, lexema: {self.lexeme}, at line {self.line}, col {self.column}"
+
+9. ahora en el método main(), después de la llamada al método tokenizer(), 
+agregue el siguiente código: 
+
+      for one_token in tokenlist:
+         print(one_token)
+
+salve y vuelva a ejecutar. Observe la salida. 
+responda las siguientes preguntas: 
+a. que representa ese numero del tipo?
+b. aprecia como un mismo token puede tener varios lexemas?
